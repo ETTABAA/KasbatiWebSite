@@ -1,0 +1,759 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+@keyframes righttoleft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes lefttoright {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes botomtotop {
+  0% {
+    top: 500%;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+header {
+  height: 10vh !important;
+}
+header nav {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
+}
+header nav li a {
+  letter-spacing: 0px !important;
+  padding-bottom: 1px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+header nav li a span {
+  width: 0% !important;
+  height: 3px !important;
+  background-color: rgb(223, 27, 27) !important;
+}
+header nav li a:hover {
+  color: rgb(223, 27, 27) !important;
+  transform: scale(1.1) !important;
+  transition: color 0.5s;
+}
+header nav li a:hover span {
+  width: 100% !important;
+  transition: width 0.75s;
+}
+
+.caroussel {
+  width: 100% !important;
+  height: 90vh !important;
+}
+.caroussel img {
+  width: 100% !important;
+  height: 90vh !important;
+  object-fit: cover !important;
+  object-position: 40% 50% !important;
+}
+.caroussel .title {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.caroussel .title .text h1 {
+  font-size: 100px !important;
+  font-weight: bold;
+  position: relative;
+  animation-name: righttoleft;
+  animation-duration: 2s;
+}
+.caroussel .title .text .lor {
+  width: auto !important;
+  height: auto !important;
+}
+.caroussel .title .text .lor .line {
+  width: 50px !important;
+  height: 3px !important;
+  position: relative;
+  animation-name: lefttoright;
+  animation-duration: 2s;
+}
+.caroussel .title .text .lor .desc {
+  position: relative;
+  animation-name: botomtotop;
+  animation-duration: 2s;
+}
+
+.kasbatiStat {
+  width: 100% !important;
+  height: 15vh !important;
+  background-color: black;
+  line-height: 1.5;
+}
+.kasbatiStat .kasbatiTitle {
+  width: 30%;
+  color: white;
+}
+.kasbatiStat span {
+  width: 1px !important;
+  height: 10vh !important;
+}
+.kasbatiStat .kasbatiNum {
+  width: 70%;
+  color: white;
+}
+.kasbatiStat .kasbatiNum h4 {
+  font-weight: 900;
+}
+.kasbatiStat .kasbatiNum h4:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.who {
+  width: 100% !important;
+  height: auto !important;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.who .whoText {
+  width: 60%;
+}
+.who .whoText h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 30px;
+  max-width: 100%;
+  position: relative;
+}
+.who .whoText h1:before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 3px;
+  background: black;
+  left: -22%;
+  top: 50%;
+  position: absolute;
+}
+.who .whoText h1:after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 3px;
+  background: black;
+  right: -22%;
+  top: 50%;
+  position: absolute;
+}
+.who .whoText p {
+  line-height: 1.7 !important;
+}
+.who .whoText button {
+  width: 25%;
+  padding: 5px;
+  background: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 25px;
+  color: white;
+}
+.who .whoText button:hover {
+  transform: scale(1.2, 1.1);
+  transition: 0.5s;
+}
+
+.about {
+  width: 100%;
+  height: 70vh;
+  padding: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.about .aboutText1 {
+  width: 40%;
+  height: 100%;
+  padding: 60px;
+  background-color: rgb(243, 243, 243);
+}
+.about .aboutText1 p {
+  font-size: 1.15rem;
+}
+.about .aboutText1 button {
+  width: 30%;
+  padding: 3px;
+  background: black;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 25px;
+  color: white;
+}
+.about .aboutText1 button:hover {
+  background-color: transparent;
+  padding: 3px;
+  border: 2px solid black;
+  color: black;
+  transition: 0.5s;
+}
+.about .aboutImg {
+  width: 40%;
+  height: 100%;
+  padding: 0;
+}
+.about .aboutImg img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.projets {
+  width: 100%;
+  height: 70vh;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: black;
+}
+.projets .whoText {
+  width: 60%;
+}
+.projets .whoText h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 30px;
+  max-width: 100%;
+  position: relative;
+}
+.projets .whoText h1:before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 3px;
+  background: white;
+  left: 0%;
+  top: 50%;
+  position: absolute;
+}
+.projets .whoText h1:after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 3px;
+  background: white;
+  right: 0%;
+  top: 50%;
+  position: absolute;
+}
+.projets .whoText p {
+  line-height: 1.7 !important;
+}
+
+.services {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.services .whoText {
+  width: 60%;
+}
+.services .whoText h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 30px;
+  max-width: 100%;
+  position: relative;
+}
+.services .whoText h1:before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 3px;
+  background: black;
+  left: 0%;
+  top: 50%;
+  position: absolute;
+}
+.services .whoText h1:after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 3px;
+  background: black;
+  right: 0%;
+  top: 50%;
+  position: absolute;
+}
+.services .whoText p {
+  line-height: 1.7 !important;
+}
+.services .serv {
+  width: 25% !important;
+  height: inherit;
+  border-radius: 5px;
+}
+.services .serv h3 {
+  width: 70%;
+  border-radius: 8px;
+}
+.services .serv:hover {
+  cursor: default;
+  transform: scale(1.02);
+  box-shadow: 1px 1px 10px rgb(48, 48, 48);
+  transition: 0.5s transform;
+  background-color: black;
+}
+.services .serv:hover i {
+  color: rgb(230, 230, 230);
+}
+.services .serv:hover h3 {
+  color: rgb(237, 18, 18);
+}
+.services .serv:hover p {
+  color: rgb(230, 230, 230) !important;
+}
+
+.contact {
+  height: 70vh;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.contact .infoContact {
+  width: 50%;
+  height: 70vh;
+}
+.contact .infoContact h1 {
+  color: rgb(176, 0, 0);
+}
+.contact .infoContact img {
+  width: 60%;
+  height: 15vh;
+}
+.contact .infoContact .sp {
+  width: 20px;
+  height: 2px;
+  background-color: aqua;
+}
+.contact .infoContact ul li {
+  list-style: none;
+  margin: 40px 20px;
+}
+.contact .map {
+  width: 50%;
+  height: 70vh;
+}
+
+footer {
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+  color: white;
+}
+footer .container {
+  height: 70% !important;
+  border-top: 2px solid white !important;
+  border-bottom: 2px solid white !important;
+}
+footer .container .kasInfo {
+  width: 40%;
+}
+footer .container .kasInfo img {
+  width: 120px;
+  height: 40px;
+}
+footer .container .bureau h3 {
+  width: fit-content;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  position: relative;
+}
+footer .container .bureau h3 .underline {
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 1px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  overflow: hidden;
+}
+footer .container .bureau h3 .underline span {
+  width: 15px;
+  height: 100%;
+  background: rgb(225, 0, 0);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 3s linear infinite;
+}
+footer .container .bureau h3::first-letter {
+  color: rgb(225, 0, 0);
+}
+footer .container .bureau i {
+  color: rgb(225, 0, 0);
+}
+footer .container .page h3 {
+  width: fit-content;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  position: relative;
+}
+footer .container .page h3 .underline {
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 1px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  overflow: hidden;
+}
+footer .container .page h3 .underline span {
+  width: 15px;
+  height: 100%;
+  background: rgb(225, 0, 0);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 3s linear infinite;
+}
+footer .container .page h3::first-letter {
+  color: rgb(225, 0, 0);
+}
+footer .container .page a:hover {
+  padding-left: 2px;
+}
+footer .container .news {
+  position: relative;
+}
+footer .container .news h3 {
+  width: fit-content;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  position: relative;
+}
+footer .container .news h3 .underline {
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 1px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  overflow: hidden;
+}
+footer .container .news h3 .underline span {
+  width: 15px;
+  height: 100%;
+  background: rgb(225, 0, 0);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+footer .container .news h3::first-letter {
+  color: rgb(225, 0, 0);
+}
+footer .container .news form {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  padding-bottom: 5px;
+}
+footer .container .news form input {
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  outline: none;
+  color: white;
+}
+footer .container .news .social-icons {
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+footer .container .news .social-icons .icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+footer .container .news .social-icons i:hover {
+  color: rgb(225, 0, 0);
+}
+
+#contact .entet {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 50px;
+}
+#contact .entet img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+#contact .entet .back {
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#contact .entet .back .title {
+  width: 50%;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-right: 5px solid yellow;
+}
+#contact .entet .back .title h1 {
+  font-size: 4rem;
+}
+
+.contactinfo {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  padding: 0 30px;
+}
+
+.form {
+  width: 60%;
+  height: 100%;
+  padding-right: 30px;
+}
+
+.info {
+  width: 40%;
+  height: 100%;
+  padding: 0 30px;
+  color: white;
+  background-color: rgb(48, 48, 48);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.info .ulinfo {
+  list-style-type: none;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.info .ulinfo h1 {
+  color: rgb(225, 0, 0);
+}
+
+.info .ulinfo li {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.info .ulinfo li i {
+  color: rgb(225, 0, 0);
+}
+
+.info .ulinfo li span:first-child {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info .ulinfo li span:last-child {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 12px;
+}
+
+.info .ulinfo li img {
+  max-width: 70%;
+  max-height: 100%;
+}
+
+.info .sci {
+  list-style-type: none;
+  width: 100%;
+  height: 10%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .sci a {
+  color: white;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+form .nameprenom {
+  display: flex;
+  flex-direction: row;
+}
+
+form .nameprenom .name, form .nameprenom .prenom {
+  width: 50%;
+}
+
+form .nameprenom .name {
+  margin-right: 8px;
+}
+
+form .nameprenom .prenom {
+  margin-left: 8px;
+}
+
+.form label {
+  color: var(--white-color);
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.form label::first-letter {
+  text-transform: uppercase;
+  color: red;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  font-size: 1.1rem;
+  border: none;
+  color: var(--white-color);
+  transition: 1s;
+  background-color: rgb(48, 48, 48);
+  resize: none;
+  color: white;
+}
+
+.form input:focus, .form textarea:focus {
+  outline: none;
+  border-radius: 0;
+}
+
+.form div .underline {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.form div .underline::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: scaleX(0);
+  transition: 1s;
+}
+
+.form input:focus ~ .underline::before,
+.form textarea:focus ~ .underline::before {
+  background: red;
+  transform: scaleX(1);
+}
+
+.form input:valid ~ .underline::before,
+.form textarea:valid ~ .underline::before {
+  background: green;
+  transform: scaleX(1);
+}
+
+#contact .container button {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid rgb(225, 0, 0);
+  color: var(--white-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: 3s;
+  border-radius: 25px;
+}
+
+#contact .container button .btnspan {
+  background-color: rgb(225, 0, 0);
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: -10%;
+  z-index: -1;
+  transition: 2s;
+  transform: skewX(-20deg);
+}
+
+#contact .container button:hover {
+  border: none;
+  padding: 12px;
+  color: black;
+}
+
+#contact .container button:hover .btnspan {
+  width: 120%;
+  height: 100%;
+}
+
+.map {
+  margin: 50px 10px;
+  width: 100%;
+  height: 60vh;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=global.css.map */

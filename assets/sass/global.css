@@ -1,0 +1,1006 @@
+* {
+  box-sizing: border-box;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+@keyframes righttoleft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes lefttoright {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes botomtotop {
+  0% {
+    top: 500%;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+header {
+  width: 100vw !important;
+  height: 10vh !important;
+}
+header nav {
+  width: 100% !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
+}
+header nav li a {
+  letter-spacing: 0px !important;
+  padding-bottom: 1px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+header nav li a span {
+  width: 0% !important;
+  height: 3px !important;
+  background-color: rgb(223, 27, 27) !important;
+}
+header nav li a:hover {
+  color: rgb(223, 27, 27) !important;
+  transform: scale(1.1) !important;
+  transition: color 0.5s;
+}
+header nav li a:hover span {
+  width: 100% !important;
+  transition: width 0.75s;
+}
+
+.caroussel {
+  width: 100% !important;
+}
+@media (min-width: 576px) {
+  .caroussel {
+    height: 70vh !important;
+  }
+}
+@media (min-width: 768px) {
+  .caroussel {
+    height: 80vh !important;
+  }
+}
+@media (min-width: 992px) {
+  .caroussel {
+    height: 90vh !important;
+  }
+}
+@media (min-width: 1200px) {
+  .caroussel {
+    height: 90vh !important;
+  }
+}
+.caroussel img {
+  width: 100% !important;
+  height: 90vh !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  -o-object-position: 40% 50% !important;
+     object-position: 40% 50% !important;
+}
+@media (min-width: 576px) {
+  .caroussel img {
+    height: 70vh !important;
+  }
+}
+@media (min-width: 768px) {
+  .caroussel img {
+    height: 80vh !important;
+  }
+}
+@media (min-width: 992px) {
+  .caroussel img {
+    height: 90vh !important;
+  }
+}
+@media (min-width: 1200px) {
+  .caroussel img {
+    height: 90vh !important;
+  }
+}
+.caroussel .title {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.caroussel .title .text h1 {
+  width: 80%;
+  font-weight: bold;
+  animation-name: righttoleft;
+  position: relative;
+  animation-duration: 2s;
+  font-size: 60px !important;
+}
+@media (min-width: 992px) {
+  .caroussel .title .text h1 {
+    font-size: 80px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .caroussel .title .text h1 {
+    font-size: 100px !important;
+  }
+}
+.caroussel .title .text span {
+  font-weight: bold;
+  animation-name: righttoleft;
+  position: relative;
+  animation-duration: 2s;
+  font-size: 60px !important;
+}
+@media (min-width: 992px) {
+  .caroussel .title .text span {
+    font-size: 80px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .caroussel .title .text span {
+    font-size: 100px !important;
+  }
+}
+.caroussel .title .text .lor {
+  width: auto !important;
+  height: auto !important;
+}
+.caroussel .title .text .lor .line {
+  width: 40px !important;
+  height: 3px !important;
+  position: relative;
+  animation-name: lefttoright;
+  animation-duration: 2s;
+}
+.caroussel .title .text .lor .desc {
+  position: relative;
+  animation-name: botomtotop;
+  animation-duration: 2s;
+}
+
+.kasbatiStat {
+  height: 30vh !important;
+  background-color: black;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .kasbatiStat {
+    height: 15vh !important;
+  }
+}
+.kasbatiStat .kasbatiTitle {
+  color: white;
+}
+@media (min-width: 576px) {
+  .kasbatiStat .kasbatiTitle {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .kasbatiStat .kasbatiTitle {
+    width: 30%;
+  }
+}
+.kasbatiStat .span1 {
+  width: 3px !important;
+  height: 80% !important;
+}
+.kasbatiStat .span2 {
+  width: 80% !important;
+  height: 3px !important;
+}
+.kasbatiStat .kasbatiNum {
+  color: white;
+}
+@media (min-width: 576px) {
+  .kasbatiStat .kasbatiNum {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .kasbatiStat .kasbatiNum {
+    width: 70%;
+  }
+}
+.kasbatiStat .kasbatiNum h4 {
+  font-weight: 900;
+}
+.kasbatiStat .kasbatiNum h4:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.who {
+  width: 100% !important;
+  min-height: 80vh !important;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.who .whoText {
+  min-height: 100%;
+}
+@media (min-width: 576px) {
+  .who .whoText {
+    width: 80% !important;
+  }
+}
+@media (min-width: 768px) {
+  .who .whoText {
+    width: 80% !important;
+  }
+}
+@media (min-width: 992px) {
+  .who .whoText {
+    width: 70% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .who .whoText {
+    width: 60% !important;
+  }
+}
+.who .whoText h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 30px;
+  max-width: 100%;
+  position: relative;
+}
+.who .whoText h1:before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: black;
+  right: 97%;
+  top: 50%;
+  position: absolute;
+}
+@media (min-width: 576px) {
+  .who .whoText h1:before {
+    width: 20%;
+  }
+}
+.who .whoText h1:after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: black;
+  left: 97%;
+  top: 50%;
+  position: absolute;
+}
+@media (min-width: 576px) {
+  .who .whoText h1:after {
+    width: 20%;
+  }
+}
+.who .whoText p {
+  width: 100%;
+  line-height: 1.7 !important;
+}
+.who .whoText button {
+  background: black;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 25px;
+  color: white;
+}
+.who .whoText button:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  transition: 0.5s;
+}
+
+.about {
+  width: 100%;
+  min-height: 85vh;
+  padding: 0;
+}
+.about .aboutText1 {
+  min-height: 80vh;
+  background-color: rgb(243, 243, 243);
+}
+@media (min-width: 576px) {
+  .about .aboutText1 {
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  .about .aboutText1 {
+    width: 80% !important;
+  }
+}
+@media (min-width: 992px) {
+  .about .aboutText1 {
+    width: 40% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .about .aboutText1 {
+    width: 40% !important;
+  }
+}
+.about .aboutText1 p {
+  font-size: 1.15rem;
+}
+.about .aboutText1 button {
+  background: black;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 25px;
+  color: white;
+}
+.about .aboutText1 button:hover {
+  background-color: transparent;
+  color: black;
+  transition: 0.5s;
+  border: 1px solid black;
+}
+.about .aboutImg {
+  height: 100%;
+  padding: 0;
+}
+@media (min-width: 576px) {
+  .about .aboutImg {
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  .about .aboutImg {
+    width: 80% !important;
+  }
+}
+@media (min-width: 992px) {
+  .about .aboutImg {
+    width: 40% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .about .aboutImg {
+    width: 40% !important;
+  }
+}
+.about .aboutImg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+@media (min-width: 576px) {
+  .about .aboutImg img {
+    height: 40vh;
+  }
+}
+@media (min-width: 768px) {
+  .about .aboutImg img {
+    height: 50vh;
+  }
+}
+@media (min-width: 992px) {
+  .about .aboutImg img {
+    height: 70vh;
+  }
+}
+.about .aboutImg .cadre {
+  width: 100%;
+  height: 100%;
+  right: 20px;
+  bottom: 20px;
+  border: 10px solid black;
+  z-index: -1;
+}
+.about .aboutImg .opacit {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.projets {
+  width: 100%;
+  min-height: 90%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: black;
+  overflow: hidden;
+}
+.projets .card {
+  width: 25%;
+  height: 65vh;
+  background-color: #ffffff;
+  border: none;
+  z-index: 1;
+}
+@media (min-width: 0px) {
+  .projets .card {
+    width: 80%;
+  }
+}
+@media (min-width: 576px) {
+  .projets .card {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .projets .card {
+    width: 30%;
+    height: 70vh;
+  }
+}
+@media (min-width: 992px) {
+  .projets .card {
+    width: 27%;
+    height: 65vh;
+  }
+}
+@media (min-width: 1200px) {
+  .projets .card {
+    width: 25%;
+    height: 70vh;
+  }
+}
+.projets .card .img {
+  width: 100%;
+  height: 50%;
+}
+.projets .card .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.projets .card .text {
+  width: 100%;
+  height: 50%;
+}
+.projets .card .text button {
+  width: 75%;
+  border-radius: 15px;
+}
+.projets .card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.projets .design2 {
+  width: 100%;
+  height: 10%;
+  left: 0;
+  top: 20%;
+  z-index: 0;
+}
+.projets .design2:nth-child(2) {
+  width: 100%;
+  height: 10%;
+  left: 0;
+  top: 70%;
+  z-index: 0;
+}
+
+.services {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.services .whoText {
+  min-height: 100%;
+}
+@media (min-width: 576px) {
+  .services .whoText {
+    width: 90% !important;
+  }
+}
+@media (min-width: 768px) {
+  .services .whoText {
+    width: 80% !important;
+  }
+}
+@media (min-width: 992px) {
+  .services .whoText {
+    width: 70% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .services .whoText {
+    width: 60% !important;
+  }
+}
+.services .whoText h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 30px;
+  max-width: 100%;
+  position: relative;
+}
+.services .whoText h1:before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: black;
+  left: 0%;
+  top: 50%;
+  position: absolute;
+}
+@media (min-width: 576px) {
+  .services .whoText h1:before {
+    width: 20%;
+  }
+}
+.services .whoText h1:after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: black;
+  right: 0%;
+  top: 50%;
+  position: absolute;
+}
+@media (min-width: 576px) {
+  .services .whoText h1:after {
+    width: 20%;
+  }
+}
+.services .whoText p {
+  line-height: 1.7 !important;
+}
+.services .serv {
+  width: 30% !important;
+  height: 300px !important;
+  border-radius: 5px;
+  background: rgb(240, 240, 240);
+}
+@media (min-width: 0px) {
+  .services .serv {
+    width: 80% !important;
+  }
+  .services .serv i {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .services .serv {
+    width: 40% !important;
+  }
+  .services .serv i {
+    font-size: 26px;
+  }
+}
+@media (min-width: 992px) {
+  .services .serv {
+    width: 30% !important;
+  }
+  .services .serv p {
+    font-size: 0.6rem;
+  }
+  .services .serv i {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  .services .serv p {
+    font-size: 0.8rem;
+  }
+  .services .serv i {
+    font-size: 30px;
+  }
+}
+.services .serv h5 {
+  width: 90%;
+  border-radius: 8px;
+}
+.services .serv p {
+  font-size: 0.95rem;
+}
+.services .serv img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+.services .serv .opacit {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  top: 0;
+  left: 0;
+}
+.services .serv:nth-child(1):hover .opacit, .services .serv:nth-child(3):hover .opacit, .services .serv:nth-child(5):hover .opacit, .services .serv:nth-child(6):hover .opacit {
+  background: rgba(0, 0, 0, 0.5);
+  transform: scale(1.015);
+  transition: 0.5s transform;
+  box-shadow: 1px 1px 10px rgb(48, 48, 48);
+}
+.services .serv:nth-child(2):hover, .services .serv:nth-child(4):hover, .services .serv:nth-child(7):hover {
+  cursor: default;
+  transform: scale(1.015);
+  box-shadow: 1px 1px 10px rgb(48, 48, 48);
+  transition: 0.5s transform;
+  background-color: black;
+}
+.services .serv:nth-child(2):hover i, .services .serv:nth-child(4):hover i, .services .serv:nth-child(7):hover i {
+  color: rgb(230, 230, 230);
+}
+.services .serv:nth-child(2):hover h5, .services .serv:nth-child(4):hover h5, .services .serv:nth-child(7):hover h5 {
+  color: rgb(237, 18, 18);
+}
+.services .serv:nth-child(2):hover p, .services .serv:nth-child(4):hover p, .services .serv:nth-child(7):hover p {
+  color: rgb(230, 230, 230) !important;
+}
+
+.contact {
+  height: 70vh;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.contact .infoContact {
+  width: 50%;
+  height: 70vh;
+}
+.contact .infoContact h1 {
+  color: rgb(176, 0, 0);
+}
+.contact .infoContact img {
+  width: 60%;
+  height: 15vh;
+}
+.contact .infoContact .sp {
+  width: 20px;
+  height: 2px;
+  background-color: aqua;
+}
+.contact .infoContact ul li {
+  list-style: none;
+  margin: 40px 20px;
+}
+.contact .map {
+  width: 50%;
+  height: 70vh;
+}
+
+footer {
+  width: 100%;
+  min-height: 70vh;
+  background-color: black;
+  color: white;
+}
+footer .containers {
+  width: 80%;
+  height: 80% !important;
+  border-top: 2px solid white !important;
+  border-bottom: 2px solid white !important;
+}
+footer .containers .kasInfos {
+  width: 90% !important;
+}
+@media (min-width: 768px) {
+  footer .containers .kasInfos {
+    width: 90% !important;
+  }
+}
+@media (min-width: 992px) {
+  footer .containers .kasInfos {
+    width: 40% !important;
+  }
+}
+@media (min-width: 1200px) {
+  footer .containers .kasInfos {
+    width: 40% !important;
+  }
+}
+footer .containers .bureau h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  position: relative;
+}
+footer .containers .bureau h3 .underline {
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 1px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  overflow: hidden;
+}
+footer .containers .bureau h3 .underline span {
+  width: 15px;
+  height: 100%;
+  background: rgb(225, 0, 0);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 3s linear infinite;
+}
+footer .containers .bureau h3::first-letter {
+  color: rgb(225, 0, 0);
+}
+footer .containers .bureau i {
+  color: rgb(225, 0, 0);
+}
+footer .containers .page h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  position: relative;
+}
+footer .containers .page h3 .underline {
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 1px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  overflow: hidden;
+}
+footer .containers .page h3 .underline span {
+  width: 15px;
+  height: 100%;
+  background: rgb(225, 0, 0);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 3s linear infinite;
+}
+footer .containers .page h3::first-letter {
+  color: rgb(225, 0, 0);
+}
+footer .containers .page a:hover {
+  padding-left: 2px;
+}
+footer .containers .news h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  position: relative;
+}
+footer .containers .news h3 .underline {
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 1px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  overflow: hidden;
+}
+footer .containers .news h3 .underline span {
+  width: 15px;
+  height: 100%;
+  background: rgb(225, 0, 0);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+footer .containers .news h3::first-letter {
+  color: rgb(225, 0, 0);
+}
+footer .containers .news form {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  padding-bottom: 5px;
+}
+footer .containers .news form input {
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  outline: none;
+  color: white;
+}
+footer .containers .news .social-icons {
+  width: 100%;
+  padding: 0 20px;
+  bottom: 10px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+footer .containers .news .social-icons .icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+footer .containers .news .social-icons i:hover {
+  color: rgb(225, 0, 0);
+}
+
+#contact .entet {
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 50px;
+}
+#contact .entet img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+#contact .entet .back {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#contact .entet .back .title {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-right: 5px solid yellow;
+}
+@media (min-width: 992px) {
+  #contact .entet .back .title {
+    width: 50%;
+  }
+}
+#contact .entet .back .title h1 {
+  font-size: 4rem;
+}
+#contact .contactinfo {
+  width: 100%;
+  min-height: 90vh;
+}
+#contact .contactinfo .form {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  #contact .contactinfo .form {
+    width: 60%;
+    height: 75vh;
+  }
+}
+#contact .contactinfo .form form {
+  width: 100%;
+  height: 100%;
+}
+#contact .contactinfo .form form div {
+  position: relative;
+}
+#contact .contactinfo .form form div label::first-letter {
+  text-transform: uppercase;
+  color: red;
+}
+#contact .contactinfo .form form div input, #contact .contactinfo .form form div textarea {
+  color: white;
+  transition: 1s;
+  background-color: rgb(48, 48, 48);
+}
+#contact .contactinfo .form form div input:focus, #contact .contactinfo .form form div textarea:focus {
+  border-radius: 0;
+  background-color: rgb(73, 73, 73);
+}
+#contact .contactinfo .form form div input:-internal-autofill-selected {
+  background-color: black !important;
+}
+#contact .contactinfo .form form div button {
+  width: 100%;
+  padding: 10px;
+  background: rgb(48, 48, 48);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 25px;
+}
+#contact .contactinfo .form form div button:hover {
+  padding: 10px;
+  color: rgb(48, 48, 48);
+  border: 2px solid rgb(48, 48, 48);
+  background: transparent;
+}
+#contact .contactinfo .info {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgb(48, 48, 48);
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  #contact .contactinfo .info {
+    width: 40%;
+    height: 75vh;
+  }
+}
+#contact .contactinfo .info .ulinfo {
+  list-style-type: none;
+  width: 100%;
+  height: auto;
+}
+#contact .contactinfo .info .ulinfo h1 {
+  color: rgb(225, 0, 0);
+}
+#contact .contactinfo .info .ulinfo li {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+#contact .contactinfo .info .ulinfo li i {
+  color: rgb(225, 0, 0);
+}
+#contact .contactinfo .info .ulinfo li span:first-child {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact .contactinfo .info .ulinfo li span:last-child {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 12px;
+}
+#contact .contactinfo .info .ulinfo li img {
+  max-width: 70%;
+  max-height: 100%;
+}
+#contact .contactinfo .info .sci {
+  list-style-type: none;
+  width: 100%;
+  height: 10%;
+}
+#contact .contactinfo .info .sci a {
+  color: white;
+}
+#contact .map {
+  width: 100%;
+  height: 60vh;
+}
+#contact .map iframe {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=global.css.map */
